@@ -3,6 +3,7 @@
 ## Building the container
 
 ```
+cd dockered-ros
 docker-compose build --no-cache ros
 docker-compose run --name ros_test ros
 ```
