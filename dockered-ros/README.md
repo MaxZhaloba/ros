@@ -10,7 +10,7 @@ This Docker image is tested on ROS Melodic, Ubuntu Bionic 18.0.4 LTS and Docker 
 
 1. Ubuntu
 2. Docker. Use the [official installation method](https://docs.docker.com/install/linux/docker-ce/ubuntu). If you download the Docker from Ubuntu Software Center its engine will have no access to X11 sockets and GUI won't start!
-3. Docker-compose. [Installation instructions](https://docs.docker.com/compose/install).
+3. Docker-compose: [installation instructions](https://docs.docker.com/compose/install).
 
 ## Included Software
 
@@ -24,7 +24,10 @@ This Docker image is tested on ROS Melodic, Ubuntu Bionic 18.0.4 LTS and Docker 
 ### Building the container
 
 ```
-cd dockered-ros
+cd ~
+git clone https://github.com/MaxZhaloba/ros.git
+cd ros/dockered-ros
+xhost +local:docker
 docker-compose build --no-cache ros
 docker-compose run --name ros_test ros
 ```
@@ -32,6 +35,7 @@ docker-compose run --name ros_test ros
 ### Starting the container next time
 
 ```
+xhost +local:docker
 docker start ros_test
 ```
 
