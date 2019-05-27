@@ -1,21 +1,3 @@
 # Repository for ROS Projects
 
-## Building the container
-
-```
-cd dockered-ros
-docker-compose build --no-cache ros
-docker-compose run --name ros_test ros
-```
-
-## Starting the container next time
-
-```
-docker start ros_test
-```
-
-## Removing all created containers
-
-```
-docker-compose rm -f
-```
+1. [Dockered ROS](dockered-ros) — ROS Docker container with Gnome Terminator and GUI support. Convenient for running multiple commands in terminal at the same time.
