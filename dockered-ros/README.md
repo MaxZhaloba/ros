@@ -1,4 +1,4 @@
-# ROS Docker 
+# Dockered ROS 
 
 This project will help you to quickly start the development with ROS in Docker container with minimum efforts. Container will open the Gnome Terminator which supports multiple command-line windows and makes it easy to run commands in parallel.
 
