@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  my_ros:
+    build: .
+    image: my_ros_gui
+    container_name: my_ros_test
+    volumes:
+      - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+      - "/home/max/projects:/home/projects"
+    environment:
+      - DISPLAY
+    network_mode: host
