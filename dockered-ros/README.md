@@ -41,7 +41,10 @@ docker start ros_test
 
 ### Using Gnome Terminator
 
-Press Ctrl+Shit+O to open a new terminal splitting the current window horizontally. Ctrl+Shift+E will split the current window vertically.
+| Hotkey | Action |
+| Ctrl+Shit+O | Open a new terminal splitting the current window horizontally |
+| Ctrl+Shift+E | Split the current window vertically |
+| Ctrl+Shift+I | Open a new window |
 
 ### Removing all created containers
 
