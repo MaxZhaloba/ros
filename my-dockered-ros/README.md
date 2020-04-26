@@ -4,7 +4,7 @@ This is a docker image with additional configuration which I use for development
 
 Building
 
-Build the [../dockered-ros] project at first
+Build the [../dockered-ros](../dockered-ros) project at first
 
 ```
 xhost +local:docker
