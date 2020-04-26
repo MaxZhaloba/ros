@@ -4,6 +4,8 @@ This is a docker image with additional configuration which I use for development
 
 Building
 
+Build the (../dockered-ros) project at first
+
 ```
 xhost +local:docker
 docker-compose build --no-cache my_ros
