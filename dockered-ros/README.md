@@ -29,14 +29,14 @@ git clone https://github.com/MaxZhaloba/ros.git
 cd ros/dockered-ros
 xhost +local:docker
 docker-compose build --no-cache ros
-docker-compose run --name ros_test ros
+docker-compose run --name ros-test ros
 ```
 
 ### Starting the container next time
 
 ```
 xhost +local:docker
-docker start ros_test
+docker start ros-test
 ```
 
 ### Using Gnome Terminator

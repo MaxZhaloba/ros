@@ -8,8 +8,8 @@ Build the [../dockered-ros](../dockered-ros) project at first
 
 ```
 xhost +local:docker
-docker-compose build --no-cache my_ros
-docker-compose run --name my_ros_test my_ros
+docker-compose build --no-cache ros
+docker-compose run --name my-ros-test ros
 ```
 
 Starting again

@@ -1,10 +1,10 @@
 version: "3.7"
 
 services:
-  my_ros:
+  ros:
     build: .
-    image: my_ros_gui
-    container_name: my_ros_test
+    image: my-ros-gui
+    container_name: my-ros-test
     volumes:
       - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
       - "/home/max/projects:/home/projects"

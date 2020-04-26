@@ -3,8 +3,8 @@ version: "3.7"
 services:
   ros:
     build: .
-    image: ros_gui
-    container_name: ros_test
+    image: ros-gui
+    container_name: ros-test
     volumes: ["/tmp/.X11-unix:/tmp/.X11-unix:rw"]
     environment:
       - DISPLAY

@@ -1,1 +1,1 @@
-FROM ros_gui
+FROM ros-gui
