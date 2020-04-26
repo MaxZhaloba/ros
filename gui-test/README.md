@@ -4,10 +4,10 @@
 docker-compose up
 ```
 
-Ctrl+Z
+Ctrl+C
 
 ```
-docker exec -it ubuntu_gui_test
+docker start -ia ubuntu_gui_test
 ```
 
 ```
