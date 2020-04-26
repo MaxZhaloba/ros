@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  bash:
+    build: .
+    image: ubuntu_gui
+    container_name: ubuntu_gui_test
+    volumes:
+      - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+      - "/home/max/projects:/home/projects"
+    working_dir: /home/projects
+    environment:
+      - DISPLAY
+    stdin_open: true
+    tty: true
+    command: /bin/bash
